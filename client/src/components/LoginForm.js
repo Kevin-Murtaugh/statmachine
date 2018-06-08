@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import axios from "axios";
 const loginStyle = {
-  border: "1px solid #eaeaea",
-  padding: "20px",
-  margin: "40px",
+  border: "2px solid #eaeaea",
+  padding: "15px",
+  margin: "5px",
   fontSize: "2em"
 };
 
@@ -92,7 +92,7 @@ export default class LoginForm extends Component {
       <div>
         <form style={loginStyle}>
           <h3>Please Log In:</h3> 
-            <div id = "entry-field-pad">
+            <div id = "entry-title-pad">
               <label htmlFor="email">Email: </label>
             </div>
           <input
@@ -103,7 +103,7 @@ export default class LoginForm extends Component {
           />
           
           <br />
-            <div id = "entry-field-pad">
+            <div id = "entry-title-pad">
               <label htmlFor="password">Password: </label>
             </div>
           <input
@@ -112,9 +112,10 @@ export default class LoginForm extends Component {
             value={this.state.password}
             onChange={this.onTextChange}
           />
-          <br />
+         
           <button onClick={this.onSubmit}>Submit</button>
-        </form>
+        </form> 
+        <br />
       </div>
     );
   }

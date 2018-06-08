@@ -52,15 +52,17 @@ export default class SignupForm extends Component {
       <div>
         <form style={signupStyle}>
           <h3>New User Signup:</h3>
-
-          <label htmlFor="name">Name: </label>
-          <input
-            type="text"
-            name="name"
+            <div id = "entry-title-pad">
+            <label htmlFor="name">Name: </label>
+            </div>
+            <input
+              type="text"
+              name="name"
             value={this.state.name}
             onChange={this.onTextChange}
           />
           <br />
+          <div id = "entry-title-pad">
           <label htmlFor="email">Email: </label>
           <input
             type="text"
@@ -68,7 +70,9 @@ export default class SignupForm extends Component {
             value={this.state.email}
             onChange={this.onTextChange}
           />
+          </div>
           <br />
+          <div id = "entry-title-pad">
           <label htmlFor="password">Password: </label>
           <input
             type="text"
@@ -76,17 +80,21 @@ export default class SignupForm extends Component {
             value={this.state.password}
             onChange={this.onTextChange}
           />
+          </div>
           <br />
+          <div id = "entry-title-pad">
           <label htmlFor="email">Phone Number: </label>
+          </div>
+          <div id = "entry-field-pad">
           <input
             type="text"
             name="phone_number"
             value={this.state.phone_number}
             onChange={this.onTextChange}
           />
-          <br />
+          </div>
           <button onClick={this.onSubmit}>Submit</button>
-        </form>
+        </form>  <br />
       </div>
     );
   }
