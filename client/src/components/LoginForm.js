@@ -92,7 +92,7 @@ export default class LoginForm extends Component {
       <div>
         <form style={loginStyle}>
           <h3>Please Log In:</h3>
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email">Email: </label>
           <input
             type="text"
             name="email"
@@ -100,7 +100,7 @@ export default class LoginForm extends Component {
             onChange={this.onTextChange}
           />
           <br />
-          <label htmlFor="password">Password</label>
+          <label htmlFor="password">Password: </label>
           <input
             type="text"
             name="password"
