@@ -91,16 +91,21 @@ export default class LoginForm extends Component {
     return (
       <div>
         <form style={loginStyle}>
-          <h3>Please Log In:</h3>
-          <label htmlFor="email">Email: </label>
+          <h3>Please Log In:</h3> 
+            <div id = "entry-field-pad">
+              <label htmlFor="email">Email: </label>
+            </div>
           <input
             type="text"
             name="email"
             value={this.state.email}
             onChange={this.onTextChange}
           />
+          
           <br />
-          <label htmlFor="password">Password: </label>
+            <div id = "entry-field-pad">
+              <label htmlFor="password">Password: </label>
+            </div>
           <input
             type="text"
             name="password"
