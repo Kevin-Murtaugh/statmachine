@@ -26,5 +26,13 @@
     "jsonwebtoken": "^8.2.2",
     "mongoose": "^5.1.4",
     "passport": "^0.4.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kevin-Murtaugh/statmachine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kevin-Murtaugh/statmachine/issues"
+  },
+  "homepage": "https://github.com/Kevin-Murtaugh/statmachine#readme"
 }
