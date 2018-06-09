@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import axios from "axios";
 const signupStyle = {
+  textAlign:'left',
   border: "2px solid gold",
-  padding: "2px",
-  margin: "4px",
+  padding: "5px",
+  marginLeft: "4px",
   fontSize: "2em"
 };
 
@@ -62,7 +63,6 @@ export default class SignupForm extends Component {
             onChange={this.onTextChange}
           />
           <br />
-          <div id = "entry-title-pad">
           <label htmlFor="email">Email: </label>
           <input
             type="text"
@@ -70,9 +70,8 @@ export default class SignupForm extends Component {
             value={this.state.email}
             onChange={this.onTextChange}
           />
-          </div>
+
           <br />
-          <div id = "entry-title-pad">
           <label htmlFor="password">Password: </label>
           <input
             type="text"
@@ -80,19 +79,14 @@ export default class SignupForm extends Component {
             value={this.state.password}
             onChange={this.onTextChange}
           />
-          </div>
           <br />
-          <div id = "entry-title-pad">
-          <label htmlFor="email">Phone Number: </label>
-          </div>
-          <div id = "entry-field-pad">
+          <label htmlFor="email">Phone Number: </label>">
           <input
             type="text"
             name="phone_number"
             value={this.state.phone_number}
             onChange={this.onTextChange}
           />
-          </div>
           <button onClick={this.onSubmit}>Submit</button>
         </form>  <br />
       </div>

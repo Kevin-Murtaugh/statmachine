@@ -5,6 +5,7 @@ import SignupForm from "./components/SignupForm";
 
 const styles = {
   wrapper: {
+    textAlign:'center',
     width: "60%",
     margin: "0 auto"
   }
