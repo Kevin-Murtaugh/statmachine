@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import axios from "axios";
 const signupStyle = {
-  border: "1px solid #eaeaea",
-  padding: "20px",
-  margin: "40px",
+  border: "2px solid gold",
+  padding: "2px",
+  margin: "4px",
   fontSize: "2em"
 };
 

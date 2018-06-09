@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import axios from "axios";
 const loginStyle = {
-  border: "2px solid #eaeaea",
-  padding: "15px",
-  margin: "5px",
+  border: "3px solid blue",
+  padding: "2px",
+  margin: "0px",
   fontSize: "2em"
 };
 
