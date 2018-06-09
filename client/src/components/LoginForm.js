@@ -93,7 +93,7 @@ export default class LoginForm extends Component {
         <form style={loginStyle}>
           <h3>Please Log In:</h3> 
             <div id = "entry-title-pad">
-              <label htmlFor="email">Email: </label>
+              <label htmlFor="email">E-mail: </label>
             </div>
           <input
             type="text"

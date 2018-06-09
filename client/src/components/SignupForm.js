@@ -53,9 +53,7 @@ export default class SignupForm extends Component {
       <div>
         <form style={signupStyle}>
           <h3>New User Signup:</h3>
-            <div id = "entry-title-pad">
             <label htmlFor="name">Name: </label>
-            </div>
             <input
               type="text"
               name="name"
@@ -63,7 +61,7 @@ export default class SignupForm extends Component {
             onChange={this.onTextChange}
           />
           <br />
-          <label htmlFor="email">Email: </label>
+          <label htmlFor="email">E-mail: </label>
           <input
             type="text"
             name="email"
@@ -80,7 +78,7 @@ export default class SignupForm extends Component {
             onChange={this.onTextChange}
           />
           <br />
-          <label htmlFor="email">Phone Number: </label>">
+          <label htmlFor="email">Phone Number:    </label>
           <input
             type="text"
             name="phone_number"
