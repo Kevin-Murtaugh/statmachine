@@ -15,112 +15,57 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body class="container-fluid px-0 bg-dark">
-    <!-------------------------------------TOP NAVBAR NAVIGATION-------------------------------------->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">
-            <img src="assets/images/statisticslogo2.png" alt="statmachine logo" id="cl-logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <!-------------------------------------TOP NAVBAR NAVIGATION-------------------------------------->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="../crypto/crypto.html">
+    
+            <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                        <li class="nav-item">
 
-        <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link mr-2" href="#">
-                        <i class="fas fa-suitcase mr-2"></i>Trade</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link mr-2" href="#">
-                        <i class="fas fa-chart-line mr-2"></i>Charts
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control form-control-sm mr-sm-2" type="search" placeholder="ex. AAPL..." aria-label="Search" id='quickQuoteInput'>
-                <button class="btn btn-outline-warning btn-sm my-2 my-sm-0" id='quickQuoteBtn' type="button">Quick Quote</button>
-            </form>
-            <ul class="navbar-nav">
-                <li class="nav-item mr-2">
-                    <a class="nav-link" href="#">
-                        <i class="far fa-bell mr-2"></i>Alerts</a>
-                </li>
-                <li class="nav-item mr-2">
-                    <a class="nav-link" href="#">
-                        <i class="far fa-paper-plane mr-2"></i>Notifications</a>
-                </li>
-                <li class="nav-item mr-2">
-                    <a class="nav-link" href="#">
-                        <i class="fas fa-user mr-2"></i>Account</a>
-                </li>
-            </ul>
+                                <div id = "navbar-img">
+                                    <img src="assets/images/ucflogo100x.png" alt="UCF logo" id="cl-logo">
+                                    </div>
+                        </li>
 
-        </div>
-    </nav>
+                    <li class="nav-item">
 
-    <div class="row text-center py-2" id="tickerTape">
-        <div class="col-md-2  d-flex justify-content-center align-items-center p-0">
-            <img src="assets/images/coinIcons/BTC.svg" alt="Bitcoin" id="bitcoinIcon" class="mr-2">
-            <div id="BTCQuote" class="">
-                <h6 class="price-display mb-0">BTC:
-                    <span class="price" id="PRICE_BTC"></span>
-                    <span id="CHANGE24HOUR_BTC" class="ml-2"></span>
-                </h6>
-            </div>
+                            <div id = "navbar-img">
+                                <img src="assets/images/USArugbylogo100x.png" alt="USA Rugby logo" id="cl-logo">
+                                </div>
+                    </li>
+                    <li class="nav-item">
+                            <div id = "navbar-img">
+                                    <img src="assets/images/IRBlogo100x100.png" alt="FRU Rugby logo" id="cl-logo">
+                                    </div>
+                    </li>
+                <!-- </ul> -->
+                    <li class="nav-item mr-2">
+                        <div id = "navbar-img">
+                                <img src="./assets/images/statisticslogo200x.png" alt="Statistics Word Cloud" id="cl-logo">
+                                </div>
+                    </li>
 
-        </div>
-        <div class="col-md-2  d-flex justify-content-center align-items-center p-0">
-            <img src="assets/images/coinIcons/ETH.svg" alt="Etherium" id='etheriumIcon' class="mr-2">
-            <div id="ETHQuote">
-                <h6 class="price-display mb-0">ETH:
-                    <span class="price" id="PRICE_ETH"></span>
-                    <span id="CHANGE24HOUR_ETH" class="ml-2"></span>
-                </h6>
+                    <li class="nav-item mr-2">
+                            <div id = "navbar-img">
+                                    <img src="./assets/images/Brumbieslogo100x.png" alt="Brumbies logo" id="cl-logo">
+                                    </div>
+                    </li>
+                    <li class="nav-item mr-2">
+                            <div id = "navbar-img">
+                                    <img src="./assets/images/SuperRugby100x.png" alt="Australia Super15 logo" id="cl-logo">
+                                    </div
+                    </li>
+                    <li class="nav-item mr-2">
+                            <div id = "navbar-img">
+                                    <img src="./assets/images/PelicanRugby100x.jpg" alt="Pelican Rugby logo" id="cl-logo">
+                                    </div>
+                    </li>
+                </ul>
+    
             </div>
-        </div>
-        <div class="col-md-2  d-flex justify-content-center align-items-center p-0">
-            <img src="assets/images/coinIcons/XRP.svg" alt="Ripple" id="rippleIcon" class="mr-2">
-            <div id="XRPQuote">
-                <h6 class="price-display mb-0">XRP:
-                    <span class="price" id="PRICE_XRP"></span>
-                    <span id="CHANGE24HOUR_XRP" class="ml-2"></span>
-                </h6>
-            </div>
-        </div>
-        <div class="col-md-2  d-flex justify-content-center align-items-center p-0">
-            <img src="assets/images/coinIcons/BCH.svg" alt="Bitcoin Cash" id="bchIcon" class="mr-2">
-            <div id="BCHQuote">
-                <h6 class="price-display mb-0">BCH:
-                    <span class="price" id="PRICE_BCH"></span>
-                    <span id="CHANGE24HOUR_BCH" class="ml-2"></span>
-                </h6>
-            </div>
-        </div>
-        <div class="col-md-2  d-flex justify-content-center align-items-center p-0">
-            <img src="assets/images/coinIcons/StellarXLM.svg" alt="Stellar" id="xlmIcon" class="mr-2">
-            <div id="XLMQuote">
-                <h6 class="price-display mb-0">XLM:
-                    <span class="price" id="PRICE_XLM"></span>
-                    <span id="CHANGE24HOUR_XLM" class="ml-2"></span>
-                </h6>
-            </div>
-        </div>
-        <div class="col-md-2  d-flex justify-content-center align-items-center p-0">
-            <img src="assets/images/coinIcons/LTC.svg" alt="Litecoin" id="liteIcon" class="mr-2">
-            <div id="LTCQuote">
-                <h6 class="price-display mb-0">LTC:
-                    <span class="price" id="PRICE_LTC"></span>
-                    <span id="CHANGE24HOUR_LTC" class="ml-2"></span>
-                </h6>
-            </div>
-        </div>
-    </div>
-
-
+        </nav>
 
     <div class="row">
         <div class="col-md-2  bg-dark text-light p-0" id="sideBarCol">

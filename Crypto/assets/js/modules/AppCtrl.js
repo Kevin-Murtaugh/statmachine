@@ -6,11 +6,11 @@ const AppCtrl = (function (ItemCtrl, UICtrl) {
     //***********************EVENT LISTENTERS**************************//
     const loadEventListeners = () => {
 
-        document.querySelector(UISelectors.quickQuoteInput).addEventListener('keypress', (e)=>{
-            if(e.charCode === 13){
-                displayQuote();    
-            }
-        });
+        // document.querySelector(UISelectors.quickQuoteInput).addEventListener('keypress', (e)=>{
+        //     if(e.charCode === 13){
+        //         displayQuote();    
+        //     }
+        //  });
         
         $(document).keypress(function(e) {
             if(e.which == 13) {
@@ -25,7 +25,7 @@ const AppCtrl = (function (ItemCtrl, UICtrl) {
         //Draw Currency Chart Submit Click
         document.querySelector(UISelectors.drawCurrChartBtn).addEventListener("click", drawCurrChart);
 
-        document.querySelector(UISelectors.quickQuoteBtn).addEventListener('click', displayQuote);
+     //   document.querySelector(UISelectors.quickQuoteBtn).addEventListener('click', displayQuote);
         
         document.querySelector(UISelectors.indicatorsUpdateBtn).addEventListener('click', drawTechnicalIndicators);
 
@@ -389,7 +389,7 @@ const AppCtrl = (function (ItemCtrl, UICtrl) {
     //Public Methods
     return {
         init: () => {
-            loadEventListeners();
+ //           loadEventListeners();
 
             initCharts();
 
