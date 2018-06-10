@@ -17,13 +17,15 @@ class App extends Component {
     return (
       <div className="App">
         <div className="wrapper" style={styles.wrapper}>
+          <div id = "main-content-body">
           <div class= "container">
             <div class = "jumbotron">
               <div class = "row">
-                <div class = "col-lg-12">
+                <div class = "col-12">
                     <h1>Welcome To Stat Machine</h1>
                       <h3> You pick the data, we figure out how chart it. </h3>
                   </div>
+              </div>
               </div>
             </div>
         </div>

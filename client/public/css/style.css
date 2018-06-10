@@ -8,6 +8,14 @@
   
   }
 
+/* #main-content-body {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(0, 0, 0),
+    #25282b,
+    #343a40
+  );
+} */
 /*******************GENERAL TAG SELECTORS Examples: body, img, header etc...*****************/
 option {
     font-weight: bold;

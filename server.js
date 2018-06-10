@@ -18,9 +18,9 @@ const db = process.env.MONGO_URI || "mongodb://localhost/htau_nrem";
 
 mongoose.connect(db).then(() => console.log("Database connection Successful!"));
 
-// // Passport middleware
+// Passport middleware
 app.use(passport.initialize());
-// // Passport Config
+// Passport Config
 require("./config/passport")(passport);
 
 app.use(express.static("client/build"));

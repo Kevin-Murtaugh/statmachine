@@ -2,12 +2,13 @@ import React, { Component } from "react";
 import axios from "axios";
 import styles from './LoginForm.css';
 const loginStyle = {
-    border: "white", 
-    padding: "10px",
-    marginLeft: "4px",
+    border: "5px solid white",
+    marginLeft: "180px",
+    textColor: "White",
+    // marginBottom: "20px",
     fontSize: "2em",
     align: "center",
-    background: "yellow",
+
     width: "70%"
   };
 
@@ -94,39 +95,39 @@ export default class LoginForm extends Component {
 
   render() {
     return (
-        <form style={loginStyle}>
-          <div class = "container">
+              <div id= "main-content-body">  
+            <form style={loginStyle}>
+          
+              <div class = "container-fluid">
+        
             <div class = "jumobtron">
               <div class = "row">
-                <div class = "col-lg-12">
-                  <div id = "card-title-text">
+                <div class = "col-12">
+
                       <h3>Please Log In:</h3>
-                  </div>
+
                 </div>
               </div> 
               <div class = "row">
-                <div class = "col-med-4">
+                <div class = "col-02">
+                </div>
+                <div class = "col-03">
                   <div id = "card-label-text">
                     <label htmlFor="email">E-mail: </label>    
-                  </div>
-                </div>
-                <div class = "col-lg-8">     
-                  <div class = "blank-input-field">
                     <input
                       type="text"
                       name="email"
                       value={this.state.email}
                       onChange={this.onTextChange}
                     />
-                  </div>
-                </div>
-                <div class = "row">
-                  <div class = "col-med-4">
+                  
+              <div class = "row">
+                  <div class = "col-04">
                     <div id = "card-label-text">
                       <label htmlFor="password">  Password: </label>
                     </div>
                   </div>
-                  <div class = "col-lg-8">     
+                  <div class = "col-06">     
                     <div class = "blank-input-field">
                       <input
                         type="text"
@@ -141,7 +142,10 @@ export default class LoginForm extends Component {
               </div>    
             </div>
           </div>
-        </form> 
+          </div>
+          </div>
+        
+        </form>   </div>
     );
   }
 }

@@ -1,6 +1,15 @@
 .App {
   text-align: center;
-  background-color: lightskyblue;
+  
+}
+
+#main-content-body {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(0, 0, 0),
+    #25282b,
+    #343a40
+  );
 }
 
 .App-logo {
@@ -38,3 +47,12 @@
 /* #jmbtrn-font-color {
    = white;
 } */
+
+#main-content-body {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(0, 0, 0),
+    #25282b,
+    #343a40
+  );
+}

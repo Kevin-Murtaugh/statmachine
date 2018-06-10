@@ -12,21 +12,16 @@
   );
 }
 
-/* .LoginForm-header {
+.LoginForm-header {
   background-color: #222;
   height: 150px;
   padding: 20px;
-  color: white;
-} */
+}
 
-/* .LoginForm-intro {
+.LoginForm-intro {
   font-size: large;
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(0, 0, 0),
-    #25282b,
-    #343a40)
-} */
+  background-color: yellow;
+}
 
 /* #btn-blank-pad {
   padding-left: 15px;
@@ -41,7 +36,7 @@
 .jumbotron {
   background-color: green;
   font-family: magneto;
-  color:silver;
+  color:white;
   border-style:solid;
   border: 3px, white;
 }
@@ -53,7 +48,7 @@
 }
 #card-label-text {
     text-align: left;
-    background-color: red;
+    background-color: green;
     width: 20%;
 }
 #htmlFor {

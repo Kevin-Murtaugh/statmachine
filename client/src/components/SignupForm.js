@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import axios from "axios";
 const signupStyle = {
-  border: "2px solid gold",
-  padding: "5px",
-  marginLeft: "4px",
+  border: "5px solid blue",
+  marginLeft: "180px",
   fontSize: "2em",
   align: "center",
-  background: "yellow",
+  color: "white",
   width: "70%"
 };
 
@@ -52,6 +51,7 @@ export default class SignupForm extends Component {
 
   render() {
     return (
+      <div id="main-content-body">
       <div>
         <form style={signupStyle}>
           <h3>New User Signup:</h3>
@@ -87,8 +87,11 @@ export default class SignupForm extends Component {
             value={this.state.phone_number}
             onChange={this.onTextChange}
           />
-          <button onClick={this.onSubmit}>Submit</button>
+          <div id = "button-color">
+            <button onClick={this.onSubmit}>Submit</button>
+          </div>
         </form>  <br />
+        </div>
       </div>
     );
   }
