@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import axios from "axios";
 const signupStyle = {
-  textAlign:'left',
   border: "2px solid gold",
   padding: "5px",
   marginLeft: "4px",
-  fontSize: "2em"
+  fontSize: "2em",
+  align: "center",
+  background: "yellow",
+  width: "70%"
 };
 
 export default class SignupForm extends Component {

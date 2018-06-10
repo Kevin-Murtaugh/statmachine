@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: lightskyblue;
 }
 
 .App-logo {
@@ -16,6 +17,7 @@
 
 .App-intro {
   font-size: large;
+  background-color: lightblue;
 }
 
 #btn-blank-pad {
@@ -27,3 +29,12 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+.jumbotron {
+  background-color: blue;
+  font-family: magneto;
+  color:silver;
+  border-style:3px, solid, black;
+}
+/* #jmbtrn-font-color {
+   = white;
+} */

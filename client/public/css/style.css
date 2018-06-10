@@ -1,6 +1,14 @@
 /*** major refactoring needed here...   */
 
-*******************GENERAL TAG SELECTORS (Examples: body, img, header etc...)*****************
+.jumbotron {
+    background-color: blue;
+    font: silver;
+    border: 3px, white;
+    width: 60%;
+  
+  }
+
+/*******************GENERAL TAG SELECTORS Examples: body, img, header etc...*****************/
 option {
     font-weight: bold;
 }

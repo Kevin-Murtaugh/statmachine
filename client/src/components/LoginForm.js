@@ -1,11 +1,16 @@
 import React, { Component } from "react";
 import axios from "axios";
+import styles from './LoginForm.css';
 const loginStyle = {
-  textAlign:'left',
-  border: "3px solid blue",
-  padding: "5px",
-  fontSize: "2em"
-};
+    border: "white", 
+    padding: "10px",
+    marginLeft: "4px",
+    fontSize: "2em",
+    align: "center",
+    background: "yellow",
+    width: "70%"
+  };
+
 
 export default class LoginForm extends Component {
   state = {
@@ -89,34 +94,54 @@ export default class LoginForm extends Component {
 
   render() {
     return (
-      <div>
         <form style={loginStyle}>
-          <h3>Please Log In:</h3> 
-            <div id = "entry-title-pad">
-              <label htmlFor="email">E-mail: </label>
+          <div class = "container">
+            <div class = "jumobtron">
+              <div class = "row">
+                <div class = "col-lg-12">
+                  <div id = "card-title-text">
+                      <h3>Please Log In:</h3>
+                  </div>
+                </div>
+              </div> 
+              <div class = "row">
+                <div class = "col-med-4">
+                  <div id = "card-label-text">
+                    <label htmlFor="email">E-mail: </label>    
+                  </div>
+                </div>
+                <div class = "col-lg-8">     
+                  <div class = "blank-input-field">
+                    <input
+                      type="text"
+                      name="email"
+                      value={this.state.email}
+                      onChange={this.onTextChange}
+                    />
+                  </div>
+                </div>
+                <div class = "row">
+                  <div class = "col-med-4">
+                    <div id = "card-label-text">
+                      <label htmlFor="password">  Password: </label>
+                    </div>
+                  </div>
+                  <div class = "col-lg-8">     
+                    <div class = "blank-input-field">
+                      <input
+                        type="text"
+                        name="password"
+                        value={this.state.password}
+                        onChange={this.onTextChange}
+                      />
+                      <button onClick={this.onSubmit}>Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>    
             </div>
-          <input
-            type="text"
-            name="email"
-            value={this.state.email}
-            onChange={this.onTextChange}
-          />
-          
-          <br />
-            <div id = "entry-title-pad">
-              <label htmlFor="password">Password: </label>
-            </div>
-          <input
-            type="text"
-            name="password"
-            value={this.state.password}
-            onChange={this.onTextChange}
-          />
-         
-          <button onClick={this.onSubmit}>Submit</button>
+          </div>
         </form> 
-        <br />
-      </div>
     );
   }
 }
