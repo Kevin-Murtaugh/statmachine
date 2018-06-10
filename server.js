@@ -8,6 +8,8 @@ const passport = require("passport");
 const bodyParser = require("body-parser");
 const users = require("./routes/users");
 const dashboard = require("./routes/dashboard");
+// About me Page
+const aboutKevin = require("./client/routes/about");
 
 app.use(cors());
 
@@ -34,6 +36,8 @@ app.use("/users", users);
 app.use(express.static(path.join(__dirname, "./Crypto")));
 app.use("/dashboard", dashboard);
 
+
+
 // app.get("/cryp", (req, res) => {
 //   console.log(`The user is ${req.user}`);
 //   res.send({
@@ -59,7 +63,7 @@ app.listen(PORT, function() {
   console.log(`🌎 ==> Server now on port ${PORT}!`);
 });
 
-// About me Page
+
 
 // Stat Page
 
