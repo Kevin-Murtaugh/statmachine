@@ -9,7 +9,7 @@ const bodyParser = require("body-parser");
 const users = require("./routes/users");
 const dashboard = require("./routes/dashboard");
 // About me Page
-const aboutKevin = require("./client/routes/about");
+//const aboutKevin = require("./client/routes/about");
 
 app.use(cors());
 
