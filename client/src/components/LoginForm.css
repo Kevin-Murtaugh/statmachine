@@ -1,8 +1,4 @@
-/* .LoginForm-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-} */
-
+/* 
 #main-content-body {
   background-image: linear-gradient(
     to bottom right,
@@ -12,26 +8,6 @@
   );
 }
 
-/* .LoginForm-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-} */
-
-/* .LoginForm-intro {
-  font-size: large;
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(0, 0, 0),
-    #25282b,
-    #343a40)
-} */
-
-/* #btn-blank-pad {
-  padding-left: 15px;
-
-} */
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
@@ -61,4 +37,4 @@
 }
 #blank-input-field {
     place-content: center;
-}
+} */

@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import axios from "axios";
-import styles from './LoginForm.css';
+
 const loginStyle = {
     border: "5px solid white",
-    marginLeft: "180px",
-    textColor: "White",
-    // marginBottom: "20px",
+    // marginLeft: "10px",
+    color: "white",
     fontSize: "2em",
     align: "center",
-
-    width: "70%"
+    // padding: "10px",
+    // width: "70%",
+    // height: "250px"
   };
 
 
@@ -95,57 +95,25 @@ export default class LoginForm extends Component {
 
   render() {
     return (
-              <div id= "main-content-body">  
-            <form style={loginStyle}>
-          
-              <div class = "container-fluid">
-        
-            <div class = "jumobtron">
-              <div class = "row">
-                <div class = "col-12">
-
-                      <h3>Please Log In:</h3>
-
-                </div>
-              </div> 
-              <div class = "row">
-                <div class = "col-02">
-                </div>
-                <div class = "col-03">
-                  <div id = "card-label-text">
-                    <label htmlFor="email">E-mail: </label>    
-                    <input
-                      type="text"
-                      name="email"
-                      value={this.state.email}
-                      onChange={this.onTextChange}
-                    />
-                  
-              <div class = "row">
-                  <div class = "col-04">
-                    <div id = "card-label-text">
-                      <label htmlFor="password">  Password: </label>
-                    </div>
-                  </div>
-                  <div class = "col-06">     
-                    <div class = "blank-input-field">
-                      <input
-                        type="text"
-                        name="password"
-                        value={this.state.password}
-                        onChange={this.onTextChange}
-                      />
-                      <button onClick={this.onSubmit}>Submit</button>
-                    </div>
-                  </div>
-                </div>
-              </div>    
+        <div id= "main-content-body">  
+            <form style={{width: '50%', margin: "0 auto", ...loginStyle}}>
+              {/* <div className = "form-title">
+                <form style={{textAlign:"left", ...loginStyle}}> */}
+                  {/* <label for="exampleFormTitle1" >Please Login:</label> */}
+                {/* <form style={{ "text-align":left}}>Please Log in:</style></div> */}
+  
+              <div className="form-group">
+                <label for="exampleInputEmail1" >Please Login:.....E-mail address</label>
+                  <input type="email" className="form-control" id="exampleInputEmail1" onChange={this.onTextChange} aria-describedby="emailHelp" placeholder="Enter email" name="email" value={this.state.email}/>
+              </div>
+              <div className="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                  <input type="password" className="form-control" id="exampleInputPassword1" onChange={this.onTextChange}  placeholder="Password" name="password" value={this.state.password}/>
             </div>
-          </div>
-          </div>
-          </div>
-        
-        </form>   </div>
+
+          <button type="submit" className="btn btn-primary" onClick={this.onSubmit}>Submit</button>
+          </form>
+        </div>
     );
   }
 }

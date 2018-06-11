@@ -15,15 +15,16 @@ import styles from './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App" id="body-background">
         <div className="wrapper" style={styles.wrapper}>
           <div id = "main-content-body">
-          <div class= "container">
-            <div class = "jumbotron">
-              <div class = "row">
-                <div class = "col-12">
+          <div className = "container">
+            <div className = "jumbotron">
+              <div className = "row">
+                <div className = "col-12">
                     <h1>Welcome To Stat Machine</h1>
-                      <h3> You pick the data, we figure out how chart it. </h3>
+                      <h3> You pick the data, we figure out how chart it. </h3> 
+                    <button className="btn btn-primary">CLICKME!</button>
                   </div>
               </div>
               </div>

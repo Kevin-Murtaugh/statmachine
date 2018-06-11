@@ -2,7 +2,7 @@
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 } */
-
+/* 
 #main-content-body {
   background-image: linear-gradient(
     to bottom right,
@@ -10,24 +10,24 @@
     #25282b,
     #343a40
   );
-}
+} */
 
-.LoginForm-header {
+/* .LoginForm-header {
   background-color: #222;
   height: 150px;
   padding: 20px;
-}
+} */
 
-.LoginForm-intro {
+/* .LoginForm-intro {
   font-size: large;
   background-color: yellow;
-}
+} */
 
 /* #btn-blank-pad {
   padding-left: 15px;
 
 } */
-
+/* 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -39,14 +39,15 @@
   color:white;
   border-style:solid;
   border: 3px, white;
-}
-#card-title-text {
+} */
+/* #card-title-text {
     place-content: center;
+    color: "white";
     text-align: center;
     background-color: purple;
     width: 30%;
-}
-#card-label-text {
+} */
+/* #card-label-text {
     text-align: left;
     background-color: green;
     width: 20%;
@@ -56,4 +57,4 @@
 }
 #blank-input-field {
     place-content: center;
-}
+} */
