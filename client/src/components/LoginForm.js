@@ -103,7 +103,8 @@ export default class LoginForm extends Component {
                 {/* <form style={{ "text-align":left}}>Please Log in:</style></div> */}
   
               <div className="form-group">
-                <label for="exampleInputEmail1" >Please Login:.....E-mail address</label>
+                <label for="exampleInputEmail1" >Please Login:</label>
+                <label for="exampleInputEmail1" >E-mail</label>
                   <input type="email" className="form-control" id="exampleInputEmail1" onChange={this.onTextChange} aria-describedby="emailHelp" placeholder="Enter email" name="email" value={this.state.email}/>
               </div>
               <div className="form-group">

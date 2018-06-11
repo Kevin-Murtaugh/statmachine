@@ -24,7 +24,6 @@ class App extends Component {
                 <div className = "col-12">
                     <h1>Welcome To Stat Machine</h1>
                       <h3> You pick the data, we figure out how chart it. </h3> 
-                    <button className="btn btn-primary">CLICKME!</button>
                   </div>
               </div>
               </div>
