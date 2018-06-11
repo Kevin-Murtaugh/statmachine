@@ -18,12 +18,12 @@ class App extends Component {
       <div className="App" id="body-background">
         <div className="wrapper" style={styles.wrapper}>
           <div id = "main-content-body">
-          <div className = "container">
-            <div className = "jumbotron">
-              <div className = "row">
-                <div className = "col-12">
+            <div className = "container">
+              <div className = "jumbotron">
+                <div className = "row">
+                  <div className = "col-12">
                     <h1>Welcome To Stat Machine</h1>
-                      <h3> You pick the data, we figure out how chart it. </h3> 
+                      <h3> You pick the data, we figure out how to chart it. </h3> 
                   </div>
               </div>
               </div>

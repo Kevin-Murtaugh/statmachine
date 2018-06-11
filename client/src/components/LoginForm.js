@@ -97,19 +97,16 @@ export default class LoginForm extends Component {
     return (
         <div id= "main-content-body">  
             <form style={{width: '50%', margin: "0 auto", ...loginStyle}}>
-              {/* <div className = "form-title">
-                <form style={{textAlign:"left", ...loginStyle}}> */}
-                  {/* <label for="exampleFormTitle1" >Please Login:</label> */}
-                {/* <form style={{ "text-align":left}}>Please Log in:</style></div> */}
+
   
               <div className="form-group">
-                <label for="exampleInputEmail1" >Please Login:</label>
-                <label for="exampleInputEmail1" >E-mail</label>
+                <label for ="exampleInputEmail1" >Please Login:...</label>
+                <label for ="exampleInputEmail3" >...E-mail</label>
                   <input type="email" className="form-control" id="exampleInputEmail1" onChange={this.onTextChange} aria-describedby="emailHelp" placeholder="Enter email" name="email" value={this.state.email}/>
               </div>
               <div className="form-group">
                 <label for="exampleInputPassword1">Password</label>
-                  <input type="password" className="form-control" id="exampleInputPassword1" onChange={this.onTextChange}  placeholder="Password" name="password" value={this.state.password}/>
+                  <input type="password" className="form-control" id="exampleInputPassword3" onChange={this.onTextChange}  placeholder="Password" name="password" value={this.state.password}/>
             </div>
 
           <button type="submit" className="btn btn-primary" onClick={this.onSubmit}>Submit</button>

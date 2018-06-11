@@ -251,10 +251,17 @@ body {
     /* Set the fixed height of the footer here */
     height: 50px;
   }
+
+#footer-text {
+    color: white;
+    padding: 15px 0 0 0;
+    margin: 0;
+  }
+  
   
 /* .footer-background {
     background-color:blueviolet;
-}
+} */
 
 html, body {
     height: 100%;
@@ -267,7 +274,7 @@ html, body {
 
 #footer-verbiage {
     font-size: 8px;
-} */
+}
 
 .publishStatusBtn {
     font-weight: bold;
