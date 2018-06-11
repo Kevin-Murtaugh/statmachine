@@ -1,6 +1,26 @@
 /*** major refactoring needed here...   */
 
-*******************GENERAL TAG SELECTORS (Examples: body, img, header etc...)*****************
+.jumbotron {
+    background-color: blue;
+    font: silver;
+    border: 3px, white;
+    width: 60%;
+  
+  }
+#navbar-img{
+    padding: 10px;
+}
+
+
+/* #main-content-body {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(0, 0, 0),
+    #25282b,
+    #343a40
+  );
+} */
+/*******************GENERAL TAG SELECTORS Examples: body, img, header etc...*****************/
 option {
     font-weight: bold;
 }
@@ -55,6 +75,9 @@ input[type=text], select, textarea {
     width: 6%;
 }
 
+#navbar-img {
+    size: 25px;
+}
 /*************** CTA LANDING PAGE *******************/
 .lp__header {
     height: 77vh;
@@ -228,10 +251,17 @@ body {
     /* Set the fixed height of the footer here */
     height: 50px;
   }
+
+#footer-text {
+    color: white;
+    padding: 15px 0 0 0;
+    margin: 0;
+  }
+  
   
 /* .footer-background {
     background-color:blueviolet;
-}
+} */
 
 html, body {
     height: 100%;
@@ -244,7 +274,7 @@ html, body {
 
 #footer-verbiage {
     font-size: 8px;
-} */
+}
 
 .publishStatusBtn {
     font-weight: bold;

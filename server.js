@@ -16,7 +16,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-const db = process.env.MONGO_URI || "mongodb://localhost/htau_nrem";
+const db = process.env.MONGODB_URI || "mongodb://localhost/statmachinedb";
 
 mongoose.connect(db).then(() => console.log("Database connection Successful!"));
 
