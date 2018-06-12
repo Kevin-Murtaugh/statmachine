@@ -201,7 +201,7 @@ const ItemCtrl = (function () {
 
             } else {
 
-                UICtrl.displayNewsArticles(stockData.news, 'stocks');
+                // UICtrl.displayNewsArticles(stockData.news, 'stocks');
 
                 stockData = stockData.chart;
                 let entityName = getStockSelects.stockName;
